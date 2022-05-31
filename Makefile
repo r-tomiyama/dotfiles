@@ -1,5 +1,5 @@
 CANDIDATES := $(wildcard .??*)
-EXCLUSIONS := .git .gitignore
+EXCLUSIONS := .git
 DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
 create_symlink:

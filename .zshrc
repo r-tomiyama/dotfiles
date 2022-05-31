@@ -6,4 +6,5 @@ alias g='git'
 
 setopt auto_cd # ディレクトリ名だけでcdする
 
+source ~/.zshrc-local
 source ~/.zshrc-private
