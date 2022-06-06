@@ -1,0 +1,19 @@
+[user]
+	name = r-tomiyama
+    email = peko858.ab@gmail.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+[color]
+	ui = true
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+	br = branch
+	cp = cherry-pick
+	ps = push
+	pl = pull
+	rs = reset
+	rb = rebase
+	a  = add
+	l  = log
