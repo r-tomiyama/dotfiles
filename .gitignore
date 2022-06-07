@@ -1,7 +1,8 @@
 # this repository
 .zshrc-private
 vscode/settings.json
-settings-private.json
+*-private.json
+*-private
 
 # Mac
 .DS_Store
