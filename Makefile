@@ -18,3 +18,8 @@ setup_vscode_plugin:
 	@cat ./vscode/extensions | xargs -L 1 -I{} code --install-extension {}
 # TODO: 環境固有のもののリストアップもしたい
 # TOOO: インストールしていないものだけインストールしたい
+
+install_library_with_homebrew:
+	@echo '==> Install or upgrade library'
+	@echo ''
+	@cd homebrew; brew bundle
