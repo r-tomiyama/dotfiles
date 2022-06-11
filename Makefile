@@ -5,6 +5,11 @@ create_symlink_to_home:
 	@echo ''
 	@$(foreach val, $(filter-out $(EXCLUSIONS), $(wildcard .??*)), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 
+setup_karabiner:
+	@echo '==> Setup karabiner'
+	@echo ''
+	@ln -sfnv $(abspath karabiner/karabiner.json $(HOME)/.config/karabiner/karabiner.json)
+
 setup_vscode:
 	@echo '==> Setup vscode'
 	@echo ''
