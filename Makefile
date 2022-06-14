@@ -22,7 +22,7 @@ install_vscode_plugin:
 	@echo ''
 	@rm -f ./vscode/support/extensions-private
 	@code --list-extensions > ./vscode/support/extensions-private
-	@cat ./vscode/extensions | xargs -L 1 -I{} code --install-extension {}
+	@cat ./vscode/support/extensions | xargs -L 1 -I{} code --install-extension {}
 # TODO: 環境固有のもののリストアップもしたい
 # TOOO: インストールしていないものだけインストールしたい
 
