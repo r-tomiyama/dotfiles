@@ -17,20 +17,10 @@ setup_vscode:
 	@jq -s add ./vscode/support/settings.json ./vscode/support/settings-private.json > ./vscode/settings.json
 	@$(foreach val, $(wildcard vscode/*.json), ln -sfnv  $(abspath $(val)) $(HOME)/Library/Application\ Support/Code/User/$(subst vscode/,,$(val));)
 
-install_vscode_plugin:
-	@echo '==> Install vscode plugin'
-	@echo ''
-	@rm -f ./vscode/support/extensions-private
-	@code --list-extensions > ./vscode/support/extensions-private
-	@cat ./vscode/support/extensions | xargs -L 1 -I{} code --install-extension {}
-# TODO: 環境固有のもののリストアップもしたい
-# TOOO: インストールしていないものだけインストールしたい
-
 install_library_with_homebrew:
 	@echo '==> Install or upgrade library'
 	@echo ''
 	@cd homebrew; brew bundle
-
 
 uninstall_library_with_homebrew:
 	@echo '==> uninstall library'
