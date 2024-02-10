@@ -23,4 +23,10 @@ sh apply.sh
 1. このリポジトリをclone
 1. [homebrewでライブラリ・VSCodeプラグインをインストール](./#homebrewでライブラリ・VSCodeプラグインをインストール)
 1. [初期セットアップ](./#初期セットアップ)をする
+    - .zshrc-local を zshrc-support を参考にしながら用意する
     - `setup_karabiner` は必要に応じて飛ばす
+
+## 設定変更のためにやること
+
+- `brew bundle dump`
+- .zshrc or .zshrc-local を変更する

@@ -1,4 +1,3 @@
-export EDITOR=code
 export ZSH="/Users/peko/.oh-my-zsh"
 ZSH_THEME="candy"
 plugins=(git zsh-syntax-highlighting zsh-completions)

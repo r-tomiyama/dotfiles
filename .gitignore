@@ -1,5 +1,6 @@
 # this repository
 .zshrc-private
+.zshrc-local
 vscode/settings.json
 *-private.json
 *-private
