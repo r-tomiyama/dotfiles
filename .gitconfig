@@ -10,6 +10,8 @@
     default = current
 [pull]
     default = current
+[fetch]
+    prune = true
 [alias]
 	sw = switch
 	nb = sw -c
