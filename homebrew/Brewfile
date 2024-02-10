@@ -7,6 +7,7 @@ tap "ngrok/ngrok"
 tap "pulumi/tap"
 tap "rbenv/tap"
 
+brew "zplug"
 brew "circleci"
 brew "deno"
 brew "elm"

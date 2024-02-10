@@ -1,3 +1,0 @@
-make create_symlink_to_home
-make setup_karabiner
-make setup_vscode

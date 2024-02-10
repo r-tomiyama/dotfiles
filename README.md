@@ -9,11 +9,16 @@ make uninstall_library_with_homebrew
 make install_library_with_homebrew
 ```
 
-### 初期セットアップ
+※ インストール済みのものを dump する場合は `brew bundle dump` 
 
-```sh
-sh apply.sh
-```
+### VSCode の設定変更
+
+- support/setting.json or support/setting-private.json を変更
+- コマンド実行
+
+    ```sh
+    make setup_vscode
+    ```
 
 ## 初期構築
 
@@ -24,9 +29,11 @@ sh apply.sh
 1. [homebrewでライブラリ・VSCodeプラグインをインストール](./#homebrewでライブラリ・VSCodeプラグインをインストール)
 1. [初期セットアップ](./#初期セットアップ)をする
     - .zshrc-local を zshrc-support を参考にしながら用意する
-    - `setup_karabiner` は必要に応じて飛ばす
+    - settings-private.json を作る
+    - コマンド実行
 
-## 設定変更のためにやること
-
-- `brew bundle dump`
-- .zshrc or .zshrc-local を変更する
+        ```sh
+        make create_symlink_to_home
+        make setup_karabiner # 必要に応じて
+        make setup_vscode
+        ```
