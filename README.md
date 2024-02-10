@@ -11,6 +11,7 @@ sh apply.sh
 ### homebrewでライブラリをインストール
 
 ```sh
+make uninstall_library_with_homebrew
 make install_library_with_homebrew
 ```
 
@@ -27,4 +28,3 @@ make install_vscode_plugin
 1. git コマンドで SSH接続できるようにする
 1. このリポジトリをclone
 1. homebrewでライブラリをインストール
-

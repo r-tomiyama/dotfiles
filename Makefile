@@ -30,3 +30,16 @@ install_library_with_homebrew:
 	@echo '==> Install or upgrade library'
 	@echo ''
 	@cd homebrew; brew bundle
+
+
+uninstall_library_with_homebrew:
+	@echo '==> uninstall library'
+	@echo ''
+	@cd homebrew; brew bundle cleanup
+	@read -p "これらをアンインストールしますか？ (yes/no)" response; \
+	(if [ "$$response" = "yes" ]; then \
+		echo "アンインストールします"; \
+		cd homebrew; brew bundle cleanup --force; \
+	else \
+		echo "終了します"; \
+	fi)
