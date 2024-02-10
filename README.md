@@ -20,6 +20,10 @@ make install_library_with_homebrew
     make setup_vscode
     ```
 
+### BetterTouchToolの設定変更
+
+- Better Touch Tool を開き、設定をexportする
+
 ## 初期構築
 
 1. homebrew をインストール
@@ -37,3 +41,5 @@ make install_library_with_homebrew
         make setup_karabiner # 必要に応じて
         make setup_vscode
         ```
+
+1. BTTの設定をインポートする
