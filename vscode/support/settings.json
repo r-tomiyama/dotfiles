@@ -11,13 +11,15 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.automationShell.linux": "",
     "gitlens.gitCommands.skipConfirmations": [
-        "fetch:command",
-        "stash-push:command",
-        "switch:command",
-        "push:command",
-        "stash-apply:command"
+      "fetch:command",
+      "stash-push:command",
+      "switch:command",
+      "push:command",
+      "stash-apply:command"
     ],
     "gitlens.advanced.messages": {
-        "suppressGitMissingWarning": true
-    }
-}
+      "suppressGitMissingWarning": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "files.autoSave": "afterDelay"
+  }

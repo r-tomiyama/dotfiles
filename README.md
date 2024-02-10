@@ -1,24 +1,18 @@
 # peko の環境構築
 
-## コマンド
+## できること
 
-### 全てを適用する
-
-```sh
-sh apply.sh
-```
-
-### homebrewでライブラリをインストール
+### homebrewでライブラリ・VSCodeプラグインをインストール
 
 ```sh
 make uninstall_library_with_homebrew
 make install_library_with_homebrew
 ```
 
-### VScode プラグインをインストール
+### 初期セットアップ
 
 ```sh
-make install_vscode_plugin
+sh apply.sh
 ```
 
 ## 初期構築
@@ -27,4 +21,6 @@ make install_vscode_plugin
 1. `brew install git`
 1. git コマンドで SSH接続できるようにする
 1. このリポジトリをclone
-1. homebrewでライブラリをインストール
+1. [homebrewでライブラリ・VSCodeプラグインをインストール](./#homebrewでライブラリ・VSCodeプラグインをインストール)
+1. [初期セットアップ](./#初期セットアップ)をする
+    - `setup_karabiner` は必要に応じて飛ばす
