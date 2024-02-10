@@ -5,15 +5,32 @@
 	editor = vim -c \"set fenc=utf-8\"
 [color]
 	ui = true
+[push]
+    default = current
+[pull]
+    default = current
 [alias]
-	co = checkout
+	sw = switch
+	nb = sw -c
+
+	a = add
+	res = restore --staged
 	st = status
-	ci = commit
+	co = commit
+	com = co -m
+	coam = co --amend
+	cors = reset --soft HEAD^
+
+	rb = rebase
+	rbi = rb -i
+
+	l  = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
+	l-all = l --all --graph
+
 	br = branch
+	rs = reset
 	cp = cherry-pick
+	di = diff
 	ps = push
 	pl = pull
 	rs = reset
-	rb = rebase
-	a  = add
-	l  = log
