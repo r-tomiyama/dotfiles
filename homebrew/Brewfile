@@ -55,6 +55,8 @@ cask "temurin11"
 cask "visual-studio-code"
 cask "warp"
 cask "cleanshot"
+cask "raycast"
+cask "bettertouchtool"
 
 vscode "christian-kohler.path-intellisense"
 vscode "davidanson.vscode-markdownlint"
