@@ -3,6 +3,7 @@
     email = peko858.ab@gmail.com
 [core]
 	editor = vim -c \"set fenc=utf-8\"
+	ignorecase = false
 [color]
 	ui = true
 [push]
