@@ -1,5 +1,5 @@
 export EDITOR=code
-export ZSH="/Users/r.tomiyama/.oh-my-zsh"
+export ZSH="/Users/peko/.oh-my-zsh"
 ZSH_THEME="candy"
 plugins=(git zsh-syntax-highlighting zsh-completions)
 autoload -U compinit && compinit -u # zsh-completionsの設定
