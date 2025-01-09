@@ -10,12 +10,11 @@ setup_karabiner:
 	@echo ''
 	@ln -sfnv $(abspath karabiner/karabiner.json $(HOME)/.config/karabiner/karabiner.json)
 
-setup_vscode:
-	@echo '==> Setup vscode'
+setup_warp:
+	@echo '==> Setup warp'
 	@echo ''
-	@rm -f ./vscode/settings.json
-	@jq -s add ./vscode/support/settings.json ./vscode/support/settings-private.json > ./vscode/settings.json
-	@$(foreach val, $(wildcard vscode/*.json), ln -sfnv  $(abspath $(val)) $(HOME)/Library/Application\ Support/Code/User/$(subst vscode/,,$(val));)
+	@rm -f ./warp/keybindings.yaml
+	@ln -sfnv $(abspath warp/keybindings.yaml) $(HOME)/.warp/keybindings.yaml
 
 install_library_with_homebrew:
 	@echo '==> Install or upgrade library'
