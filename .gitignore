@@ -1,9 +1,11 @@
 # this repository
 .zshrc-private
 .zshrc-local
-vscode/settings.json
 *-private.json
 *-private
 
 # Mac
 .DS_Store
+
+# アプリケーション機能でsyncすることにした
+vscode

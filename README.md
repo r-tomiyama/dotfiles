@@ -11,15 +11,6 @@ make install_library_with_homebrew
 
 ※ インストール済みのものを dump する場合は `brew bundle dump` 
 
-### VSCode の設定変更
-
-- support/setting.json or support/setting-private.json を変更
-- コマンド実行
-
-    ```sh
-    make setup_vscode
-    ```
-
 ### BetterTouchToolの設定変更
 
 - Better Touch Tool を開き、設定をexportする
