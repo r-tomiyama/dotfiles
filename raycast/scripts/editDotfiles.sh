@@ -7,4 +7,4 @@
 # @raycast.icon 📝
 
 code ~/dotfiles
-g pl
+git pull
