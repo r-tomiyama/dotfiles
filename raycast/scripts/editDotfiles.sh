@@ -13,3 +13,5 @@ git pull
 make create_symlink_to_home
 make setup_karabiner
 make setup_warp
+
+echo "done"
