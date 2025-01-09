@@ -10,8 +10,7 @@ else
   alias ls='ls -FGH'
 fi
 
-setopt auto_cd # ディレクトリ名だけでcdする
-
+export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR=code
 
 source ~/.zshrc-local
